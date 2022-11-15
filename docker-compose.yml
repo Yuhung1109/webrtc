@@ -1,0 +1,32 @@
+version: "3"
+services:
+  streaming:
+    expose:
+      - "6789"
+    build: API
+    container_name: api
+    ports:
+      - "6789:6789"
+    volumes:
+       - /home/zhongyu/webrtc_data:/home/zhongyu/webrtc_data
+    restart: always
+    command: "python3 api.py"
+  server:
+    expose:
+      - "3012"
+    build: server
+    container_name: webrtc_server
+    ports:
+      - "3012:3012"
+    restart: always
+    command: "node ./src/app.js"
+  web:
+    expose:
+      - "80"
+      - "443"
+    build: web_server
+    container_name: web_server
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always

@@ -1,0 +1,5 @@
+pymysql
+pybase64
+Flask
+flask_cors
+flask_api

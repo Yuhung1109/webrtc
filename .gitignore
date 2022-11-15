@@ -1,0 +1,15 @@
+# vscode
+.vscode
+
+# ssl
+*.key
+*.crt
+
+# log
+nohup.out
+
+# python
+__pycache__
+
+# nodejs
+server/package-lock.json
