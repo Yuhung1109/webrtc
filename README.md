@@ -11,9 +11,9 @@
 ```pythono=1
 [POSTGRES]
 
-host = 192.168.1.123
+host = localhost
 port = 5431
-user = postgres
+user = root
 password = 12345678
 
 account_db = account
@@ -21,8 +21,8 @@ account_db = account
 > Second, we need to change the path which the user's profile figure to save.
 ```pythono=1
 [PATH]
-file_path = /home/zhongyu/webrtc_data
-no_file_path = /home/zhongyu/webrtc_data/origin.jpg
+file_path = /home/ubuntu/webrtc/file
+no_file_path = /home/ubuntu/webrtc/origin.jpg
 ```
 > Change the path where the folder you are.
 
